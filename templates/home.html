@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+        <script src="{{ url_for('static', filename='script.js') }}"></script>
+        <title>Head Check 3000</title>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Head Check</h1>
+        </div>
+        
+        <div class="instructions">
+            <p>Welcome to headcheck. To register, please enter your details below.</p>
+        </div>
+
+        <div class="main-container">
+                <form id="details" onsubmit="return validation();" action="snapshot" method="GET">
+                    <fieldset>
+                        <legend>Your Details</legend>
+                        <label for="first-name">First Name</label>
+                        <input class="text" id="first-name" name="first-name" type="text"><br/>
+                        <label for="last-name">Last Name</label>
+                        <input class="text" id="last-name" name="last-name" type="text"><br/>
+                        <label for="username">Username</label>
+                        <input class="text" id="username" name="username" type="text"><br/>
+                    </fieldset>
+                    <input class="main-button" type="submit">
+                </form>
+        </div>
+    </body>
+</html>

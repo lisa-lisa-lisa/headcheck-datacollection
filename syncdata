@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+while true; do
+    rsync --delete -a -P database/ /Users/schwel/Reece\ Group/Mala\ Rathinasamy\ -\ hackathon/data
+    sleep 5
+done
